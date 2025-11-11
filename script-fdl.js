@@ -11,7 +11,7 @@ var svg =  d3.select("#fdl")
     var nodes = graph.nodes; //TODO: read from the dataset the nodes of the graph
     var arcs = graph.links ;//TODO: read from the dataset the arcs of the graph
     
-    var layout = d3.forceSimulation(nodes)
+    var simulation = d3.forceSimulation(nodes)
                    .force('center', d3.forceCenter(width/2, height/2))
                    .force('collide', d3.forceCollide(15))
                    .force('charge', d3.forceManyBody().strength(-50))
