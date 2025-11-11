@@ -13,7 +13,7 @@ var layout = d3.forceSimulation(nodes)
               .force('collisions', d3.forceCollide(d => d.r))
               .on('tick', ticked)
 
-let node = svg.append("g")
+let bubbles = svg.append("g")
               .selectAll("circle")
               .data(nodes).enter()
               .append("circle")
