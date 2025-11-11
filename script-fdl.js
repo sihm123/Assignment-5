@@ -1,8 +1,8 @@
 //TODO: read the dataset
 d3.json("miserables.json").then(function(graph){
   
-  var width = 500
-  var height= 500
+  var width = 800
+  var height= 600
 
 var svg =  d3.select("#fdl")
     .style("width", width)
