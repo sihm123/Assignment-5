@@ -11,8 +11,8 @@ children: [
   }
 ]
 })
-var width = 800
-var height= 600
+var width = 500
+var height= 500
 
 var root = d3.hierarchy(family);//TODO: the call on the function d3.hierarchy goes here
 
