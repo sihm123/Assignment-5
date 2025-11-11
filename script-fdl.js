@@ -15,7 +15,7 @@ var svg =  d3.select("#fdl")
                    .force('center', d3.forceCenter(width/2, height/2))
                    .force('collide', d3.forceCollide(15))
                    .force('charge', d3.forceManyBody().strength(-50))
-                   .force('link', d3.forceLink(arcs).id(d=>d.id))
+                   .force('link', d3.forceLink(arcs))
                    .on('tick', ticked);//TODO: create an approprate layout using four forces: forceCenter(), forceCollide(), forceManyBody() and forceLink()
     
     var color = d3.scaleOrdinal(d3.schemeCategory10); ;//TODO: create a color scale to map on the groups of the graph nodes
