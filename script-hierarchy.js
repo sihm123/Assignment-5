@@ -16,7 +16,7 @@ var height= 500
 
 var root = d3.hierarchy(family);//TODO: the call on the function d3.hierarchy goes here
 
-let layout = d3.tree().size([height - 50, width - 100])(root);//TODO: use root to prepare your layout with the function d3.tree()
+let treeLayout = d3.tree().size([height - 50, width - 100])(root);//TODO: use root to prepare your layout with the function d3.tree()
   
 
 var svg =  d3.select("#hierarchy")
