@@ -1,6 +1,6 @@
 
-var width = 500
-var height= 500
+var width = 800
+var height= 600
 
 var svg = d3.select("#forces")
   .style("width", width)
